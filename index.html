@@ -5,30 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300;500;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Mi Pomodoro</h1>
+        <header class="header">
+            <h1>Mi POMODORO</h1>
         </header>
-        <main>
-            <section>
-                <h2 class="" id="currentActivity">Work Time</h2>
+        <main class="principal">
+            <section class="current_cycle">
+                <h3 id="currentCycle">1/4</h3>
             </section>
-
-            <section>
-                <div>
-                    <p id="currentTime">25:00</p>
+            <section class="cur_time-container">              
+                <p class="current_time" id="currentTime">25:00</p>               
+            </section>
+            <section class="cur_activity-container">
+                <div class="short_break" id="shortBreak">
+                    Short Break
+                </div>
+                <div class="pomodoro_time" id="pomodoroTime">
+                    Pomodoro Time
+                </div>
+                <div class="long_break" id="longBreak">
+                    Long Break
                 </div>
             </section>
-            <button id="btnPlayPause">Play</button>
-
         </main>
+        <div class="buttons-container">
+            <button id="btnRestart">Restart</button>
+            <button id="btnPlayPause">Play</button>
+            <button id="btnSettings">Settings</button>
+        </div>
         <footer>
-            <img src="" alt="restart">
-            <img src="" alt="settings">
+            holis
         </footer>
     </div>
-    <script src="./javascript/index.js"></script>
+    <script type='module' src='./javascript/index.js' "></script>
 </body>
 </html>
